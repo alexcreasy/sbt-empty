@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="smeg-simple-test-build"
+		revision="0.1.0-SNAPSHOT"
+		extra-scalaVersion="2.12"
+		extra-sbtVersion="1.0"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20210914120113"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.7" status="release" pubdate="20180927093203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/Users/acreasy/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.pom"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.2.9"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3616372" time="0" location="/Users/acreasy/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.7" status="release" pubdate="20180927093542" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/acreasy/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.pom"/>
+				<caller organisation="com.softwaremill.sttp.model" name="core_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.4.7"/>
+				<caller organisation="com.softwaremill.sttp.shared" name="core_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.2.5"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.12.7"/>
+				<caller organisation="com.softwaremill.sttp.shared" name="ws_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.2.5"/>
+				<caller organisation="com.softwaremill.sttp.client3" name="core_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.3.5"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.2.9"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5277511" time="0" location="/Users/acreasy/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.pnc.smeg" name="smeg-plugin">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20210914120028" resolver="local" artresolver="local" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="true" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="no" details="" size="3669" time="0" location="/Users/acreasy/.ivy2/cache/scala_2.12/sbt_1.0/org.jboss.pnc.smeg/smeg-plugin/ivy-0.1.0-SNAPSHOT.xml" searched="true" original-local-location="/Users/acreasy/.ivy2/local/org.jboss.pnc.smeg/smeg-plugin/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/ivys/ivy.xml" origin-is-local="true" origin-location="/Users/acreasy/.ivy2/local/org.jboss.pnc.smeg/smeg-plugin/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/ivys/ivy.xml"/>
+				<caller organisation="default" name="smeg-simple-test-build" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="smeg-plugin" type="jar" ext="jar" status="no" details="" size="53887" time="0" location="/Users/acreasy/.ivy2/local/org.jboss.pnc.smeg/smeg-plugin/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/jars/smeg-plugin.jar">
+						<origin-location is-local="true" location="/Users/acreasy/.ivy2/local/org.jboss.pnc.smeg/smeg-plugin/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/jars/smeg-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.12">
+			<revision name="3.2.9" status="release" pubdate="20210514073222" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="70">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2970" time="0" location="/Users/acreasy/.ivy2/cache/org.scalactic/scalactic_2.12/ivy-3.2.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.2.9/scalactic_2.12-3.2.9.pom"/>
+				<caller organisation="org.jboss.pnc.smeg" name="smeg-plugin" conf="compile" rev="3.2.9" rev-constraint-default="3.2.9" rev-constraint-dynamic="3.2.9" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalactic_2.12" type="bundle" ext="jar" status="no" details="" size="1584096" time="0" location="/Users/acreasy/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.2.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.2.9/scalactic_2.12-3.2.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.ext" name="pom-manipulation-core">
+			<revision name="4.4" status="release" pubdate="20210702200246" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="APLv2.0"/>
+				<metadata-artifact status="no" details="" size="24556" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.ext/pom-manipulation-core/ivy-4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-core/4.4/pom-manipulation-core-4.4.pom"/>
+				<caller organisation="org.jboss.pnc.smeg" name="smeg-plugin" conf="compile" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="pom-manipulation-core" type="jar" ext="jar" status="no" details="" size="207291" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.ext/pom-manipulation-core/jars/pom-manipulation-core-4.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-core/4.4/pom-manipulation-core-4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.groovy" name="groovy-json">
+			<revision name="3.0.7" status="release" pubdate="20201203123500" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://groovy-lang.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2709" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.groovy/groovy-json/ivy-3.0.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="3.0.7" rev-constraint-default="3.0.7" rev-constraint-dynamic="3.0.7" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="groovy-json" type="jar" ext="jar" status="no" details="" size="133034" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.groovy/groovy-json/jars/groovy-json-3.0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.groovy" name="groovy">
+			<revision name="3.0.7" status="release" pubdate="20201203123523" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://groovy-lang.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3774" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.groovy/groovy/ivy-3.0.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="3.0.7" rev-constraint-default="3.0.7" rev-constraint-dynamic="3.0.7" callerrev="4.4"/>
+				<caller organisation="org.codehaus.groovy" name="groovy-json" conf="compile, runtime" rev="3.0.7" rev-constraint-default="3.0.7" rev-constraint-dynamic="3.0.7" callerrev="3.0.7"/>
+				<artifacts>
+					<artifact name="groovy" type="jar" ext="jar" status="no" details="" size="7949743" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.groovy/groovy/jars/groovy-3.0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus">
+			<revision name="0.3.4" status="release" pubdate="20191105225901" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="4973" time="0" location="/Users/acreasy/.ivy2/cache/org.eclipse.sisu/org.eclipse.sisu.plexus/ivy-0.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.4/org.eclipse.sisu.plexus-0.3.4.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="0.3.4" rev-constraint-default="0.3.4" rev-constraint-dynamic="0.3.4" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="org.eclipse.sisu.plexus" type="eclipse-plugin" ext="jar" status="no" details="" size="205323" time="0" location="/Users/acreasy/.ivy2/cache/org.eclipse.sisu/org.eclipse.sisu.plexus/eclipse-plugins/org.eclipse.sisu.plexus-0.3.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.4/org.eclipse.sisu.plexus-0.3.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-classworlds">
+			<revision name="2.5.2" status="release" pubdate="20140829180823" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7221" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.plexus/plexus-classworlds/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="0.3.4"/>
+				<artifacts>
+					<artifact name="plexus-classworlds" type="bundle" ext="jar" status="no" details="" size="52684" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.plexus/plexus-classworlds/bundles/plexus-classworlds-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-component-annotations">
+			<revision name="1.5.5" status="release" pubdate="20100930211459" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5287" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.plexus/plexus-component-annotations/ivy-1.5.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="1.5.5" rev-constraint-default="1.5.5" rev-constraint-dynamic="1.5.5" callerrev="0.3.4"/>
+				<artifacts>
+					<artifact name="plexus-component-annotations" type="jar" ext="jar" status="no" details="" size="4211" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.plexus/plexus-component-annotations/jars/plexus-component-annotations-1.5.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.sisu" name="org.eclipse.sisu.inject">
+			<revision name="0.3.4" status="release" pubdate="20191105225430" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3751" time="0" location="/Users/acreasy/.ivy2/cache/org.eclipse.sisu/org.eclipse.sisu.inject/ivy-0.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.4/org.eclipse.sisu.inject-0.3.4.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="0.3.4" rev-constraint-default="0.3.4" rev-constraint-dynamic="0.3.4" callerrev="0.3.4"/>
+				<artifacts>
+					<artifact name="org.eclipse.sisu.inject" type="eclipse-plugin" ext="jar" status="no" details="" size="379197" time="0" location="/Users/acreasy/.ivy2/cache/org.eclipse.sisu/org.eclipse.sisu.inject/eclipse-plugins/org.eclipse.sisu.inject-0.3.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.4/org.eclipse.sisu.inject-0.3.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.ext" name="pom-manipulation-io">
+			<revision name="4.4" status="release" pubdate="20210702200134" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="46">
+				<license name="APLv2.0"/>
+				<metadata-artifact status="no" details="" size="26066" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.ext/pom-manipulation-io/ivy-4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-io/4.4/pom-manipulation-io-4.4.pom"/>
+				<caller organisation="org.jboss.pnc.smeg" name="smeg-plugin" conf="compile" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="pom-manipulation-io" type="jar" ext="jar" status="no" details="" size="55225" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.ext/pom-manipulation-io/jars/pom-manipulation-io-4.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-io/4.4/pom-manipulation-io-4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.29" status="release" pubdate="20210608181710" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4792" time="0" location="/Users/acreasy/.ivy2/cache/org.yaml/snakeyaml/ivy-1.29.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.29/snakeyaml-1.29.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="1.29" rev-constraint-default="1.29" rev-constraint-dynamic="1.29" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="bundle" ext="jar" status="no" details="" size="329836" time="0" location="/Users/acreasy/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.29.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jayway.jsonpath" name="json-path">
+			<revision name="2.3.0" status="release" pubdate="20170626191752" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jayway/JsonPath" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3480" time="0" location="/Users/acreasy/.ivy2/cache/com.jayway.jsonpath/json-path/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.3.0/json-path-2.3.0.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="json-path" type="jar" ext="jar" status="no" details="" size="221808" time="0" location="/Users/acreasy/.ivy2/cache/com.jayway.jsonpath/json-path/jars/json-path-2.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.3.0/json-path-2.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.minidev" name="json-smart">
+			<revision name="2.3" status="release" pubdate="20170326085657" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.minidev.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4937" time="0" location="/Users/acreasy/.ivy2/cache/net.minidev/json-smart/ivy-2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/minidev/json-smart/2.3/json-smart-2.3.pom"/>
+				<caller organisation="com.jayway.jsonpath" name="json-path" conf="compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="2.3.0"/>
+				<artifacts>
+					<artifact name="json-smart" type="bundle" ext="jar" status="no" details="" size="120316" time="0" location="/Users/acreasy/.ivy2/cache/net.minidev/json-smart/bundles/json-smart-2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/minidev/json-smart/2.3/json-smart-2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.minidev" name="accessors-smart">
+			<revision name="1.2" status="release" pubdate="20170326085643" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.minidev.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3480" time="0" location="/Users/acreasy/.ivy2/cache/net.minidev/accessors-smart/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/minidev/accessors-smart/1.2/accessors-smart-1.2.pom"/>
+				<caller organisation="net.minidev" name="json-smart" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.3"/>
+				<artifacts>
+					<artifact name="accessors-smart" type="bundle" ext="jar" status="no" details="" size="30035" time="0" location="/Users/acreasy/.ivy2/cache/net.minidev/accessors-smart/bundles/accessors-smart-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="5.0.4" status="release" pubdate="20150515160455" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3953" time="0" location="/Users/acreasy/.ivy2/cache/org.ow2.asm/asm/ivy-5.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4.pom"/>
+				<caller organisation="net.minidev" name="accessors-smart" conf="compile, runtime" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.2"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="53297" time="0" location="/Users/acreasy/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven.release" name="maven-release-manager">
+			<revision name="3.0.0-M1" status="release" pubdate="20191208200134" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="14529" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.maven.release/maven-release-manager/ivy-3.0.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/release/maven-release-manager/3.0.0-M1/maven-release-manager-3.0.0-M1.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="3.0.0-M1" rev-constraint-default="3.0.0-M1" rev-constraint-dynamic="3.0.0-M1" callerrev="4.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven.release" name="maven-release-api">
+			<revision name="3.0.0-M1" status="release" pubdate="20191208195956" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11036" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.maven.release/maven-release-api/ivy-3.0.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/release/maven-release-api/3.0.0-M1/maven-release-api-3.0.0-M1.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="3.0.0-M1" rev-constraint-default="3.0.0-M1" rev-constraint-dynamic="3.0.0-M1" callerrev="4.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.galley" name="galley-transport-filearc">
+			<revision name="0.16.6" status="release" pubdate="20181213155554" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21641" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-transport-filearc/ivy-0.16.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-transport-filearc/0.16.6/galley-transport-filearc-0.16.6.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="galley-transport-filearc" type="jar" ext="jar" status="no" details="" size="23723" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-transport-filearc/jars/galley-transport-filearc-0.16.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-transport-filearc/0.16.6/galley-transport-filearc-0.16.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.15" status="release" pubdate="20200828130255" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="16855" time="0" location="/Users/acreasy/.ivy2/cache/commons-codec/commons-codec/ivy-1.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="1.15" rev-constraint-default="1.15" rev-constraint-dynamic="1.15" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.11" rev-constraint-default="1.11" rev-constraint-dynamic="1.11" callerrev="4.5.13"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="353793" time="0" location="/Users/acreasy/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.11" status="release" pubdate="20171017155430" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12632" time="0" location="/Users/acreasy/.ivy2/cache/commons-codec/commons-codec/ivy-1.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.11/commons-codec-1.11.pom"/>
+				<evicted-by rev="1.15"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.11" rev-constraint-default="1.11" rev-constraint-dynamic="1.11" callerrev="4.5.13"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.15"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.11" rev-constraint-default="1.11" rev-constraint-dynamic="1.11" callerrev="4.5.13"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="1.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.ext" name="pom-manipulation-common">
+			<revision name="4.4" status="release" pubdate="20210702200036" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="APLv2.0"/>
+				<metadata-artifact status="no" details="" size="23384" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.ext/pom-manipulation-common/ivy-4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-common/4.4/pom-manipulation-common-4.4.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="pom-manipulation-common" type="jar" ext="jar" status="no" details="" size="83749" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.ext/pom-manipulation-common/jars/pom-manipulation-common-4.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-common/4.4/pom-manipulation-common-4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-utils">
+			<revision name="3.3.0" status="release" pubdate="20191011223108" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4272" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="plexus-utils" type="jar" ext="jar" status="no" details="" size="263253" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.0.17" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.3.0"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jdom" name="jdom">
+			<revision name="1.1.3" status="release" pubdate="20120227050331" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jdom.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Similar to Apache License but with the acknowledgment clause removed" url="https://raw.github.com/hunterhacker/jdom/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2904" time="0" location="/Users/acreasy/.ivy2/cache/org.jdom/jdom/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="jdom" type="jar" ext="jar" status="no" details="" size="151304" time="0" location="/Users/acreasy/.ivy2/cache/org.jdom/jdom/jars/jdom-1.1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.goots.hiderdoclet" name="doclet">
+			<revision name="1.1" status="release" pubdate="20201030153725" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="APLv2.0"/>
+				<metadata-artifact status="no" details="" size="6751" time="0" location="/Users/acreasy/.ivy2/cache/org.goots.hiderdoclet/doclet/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/goots/hiderdoclet/doclet/1.1/doclet-1.1.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="doclet" type="jar" ext="jar" status="no" details="" size="815109" time="0" location="/Users/acreasy/.ivy2/cache/org.goots.hiderdoclet/doclet/jars/doclet-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/goots/hiderdoclet/doclet/1.1/doclet-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.da" name="reports-model">
+			<revision name="2.1.0" status="release" pubdate="20210702140854" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="184226" time="0" location="/Users/acreasy/.ivy2/cache/org.jboss.da/reports-model/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/da/reports-model/2.1.0/reports-model-2.1.0.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="reports-model" type="ejb" ext="jar" status="no" details="" size="88005" time="0" location="/Users/acreasy/.ivy2/cache/org.jboss.da/reports-model/ejbs/reports-model-2.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/da/reports-model/2.1.0/reports-model-2.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-validator" name="commons-validator">
+			<revision name="1.5.1" status="release" pubdate="20160425183352" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-validator/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12178" time="0" location="/Users/acreasy/.ivy2/cache/commons-validator/commons-validator/ivy-1.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.pom"/>
+				<caller organisation="org.jboss.da" name="reports-model" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="2.1.0"/>
+				<artifacts>
+					<artifact name="commons-validator" type="jar" ext="jar" status="no" details="" size="178967" time="0" location="/Users/acreasy/.ivy2/cache/commons-validator/commons-validator/jars/commons-validator-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-digester" name="commons-digester">
+			<revision name="1.8.1" status="release" pubdate="20090103164824" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/digester/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5414" time="0" location="/Users/acreasy/.ivy2/cache/commons-digester/commons-digester/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.pom"/>
+				<caller organisation="commons-validator" name="commons-validator" conf="compile, runtime" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="1.5.1"/>
+				<artifacts>
+					<artifact name="commons-digester" type="jar" ext="jar" status="no" details="" size="146108" time="0" location="/Users/acreasy/.ivy2/cache/commons-digester/commons-digester/jars/commons-digester-1.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.galley" name="galley-maven">
+			<revision name="0.16.6" status="release" pubdate="20181213155710" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22290" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-maven/ivy-0.16.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-maven/0.16.6/galley-maven-0.16.6.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="galley-maven" type="jar" ext="jar" status="no" details="" size="147025" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-maven/jars/galley-maven-0.16.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-maven/0.16.6/galley-maven-0.16.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-jxpath" name="commons-jxpath">
+			<revision name="1.3" status="release" pubdate="20080813232931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/jxpath/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6810" time="0" location="/Users/acreasy/.ivy2/cache/commons-jxpath/commons-jxpath/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="commons-jxpath" type="jar" ext="jar" status="no" details="" size="299994" time="0" location="/Users/acreasy/.ivy2/cache/commons-jxpath/commons-jxpath/jars/commons-jxpath-1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.atlas" name="atlas-relationships-api">
+			<revision name="0.17.2" status="release" pubdate="20170912195353" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="14113" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.atlas/atlas-relationships-api/ivy-0.17.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/atlas/atlas-relationships-api/0.17.2/atlas-relationships-api-0.17.2.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="atlas-relationships-api" type="jar" ext="jar" status="no" details="" size="59498" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.atlas/atlas-relationships-api/jars/atlas-relationships-api-0.17.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/atlas/atlas-relationships-api/0.17.2/atlas-relationships-api-0.17.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities">
+			<revision name="0.17.2" status="release" pubdate="20170912195330" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13783" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.atlas/atlas-bindings-jackson-identities/ivy-0.17.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/atlas/atlas-bindings-jackson-identities/0.17.2/atlas-bindings-jackson-identities-0.17.2.pom"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.17.2"/>
+				<artifacts>
+					<artifact name="atlas-bindings-jackson-identities" type="jar" ext="jar" status="no" details="" size="8876" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.atlas/atlas-bindings-jackson-identities/jars/atlas-bindings-jackson-identities-0.17.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/atlas/atlas-bindings-jackson-identities/0.17.2/atlas-bindings-jackson-identities-0.17.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.galley" name="galley-core">
+			<revision name="0.16.6" status="release" pubdate="20181213155530" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22660" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-core/ivy-0.16.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-core/0.16.6/galley-core-0.16.6.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="galley-core" type="jar" ext="jar" status="no" details="" size="78653" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-core/jars/galley-core-0.16.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-core/0.16.6/galley-core-0.16.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.galley" name="galley-transport-httpclient">
+			<revision name="0.16.6" status="release" pubdate="20181213155448" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="23850" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-transport-httpclient/ivy-0.16.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-transport-httpclient/0.16.6/galley-transport-httpclient-0.16.6.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="galley-transport-httpclient" type="jar" ext="jar" status="no" details="" size="57209" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-transport-httpclient/jars/galley-transport-httpclient-0.16.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-transport-httpclient/0.16.6/galley-transport-httpclient-0.16.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-core">
+			<revision name="4.0.2" status="release" pubdate="20180105185228" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4895" time="0" location="/Users/acreasy/.ivy2/cache/io.dropwizard.metrics/metrics-core/ivy-4.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/4.0.2/metrics-core-4.0.2.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="4.0.2" rev-constraint-default="4.0.2" rev-constraint-dynamic="4.0.2" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="metrics-core" type="bundle" ext="jar" status="no" details="" size="97677" time="0" location="/Users/acreasy/.ivy2/cache/io.dropwizard.metrics/metrics-core/bundles/metrics-core-4.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/4.0.2/metrics-core-4.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316163632" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5199" time="0" location="/Users/acreasy/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
+				<evicted-by rev="1.7.30"/>
+				<caller organisation="com.jayway.jsonpath" name="json-path" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.3.0"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="4.0.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.30" status="release" pubdate="20191216210337" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5347" time="0" location="/Users/acreasy/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.30.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="com.jayway.jsonpath" name="json-path" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.3.0"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="4.0.2"/>
+				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="1.7.21"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-annotation" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="4.4"/>
+				<caller organisation="org.commonjava.cdi.util" name="weft" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.0"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.0.12"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41472" time="0" location="/Users/acreasy/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.30.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.20" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="1.7.30"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.21" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.30"/>
+				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="1.7.21"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.cdi.util" name="weft" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.0"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.0.12"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.9"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="4.0.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.30"/>
+				<caller organisation="org.commonjava.cdi.util" name="weft" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.0"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.0.12"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jcl-over-slf4j">
+			<revision name="1.7.21" status="release" pubdate="20160404193836" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5275" time="0" location="/Users/acreasy/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.21.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="jcl-over-slf4j" type="jar" ext="jar" status="no" details="" size="16431" time="0" location="/Users/acreasy/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.21"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jsoup" name="jsoup">
+			<revision name="1.8.3" status="release" pubdate="20150802213227" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jsoup.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="The MIT License" url="http://jsoup.org/license"/>
+				<metadata-artifact status="no" details="" size="3092" time="0" location="/Users/acreasy/.ivy2/cache/org.jsoup/jsoup/ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="jsoup" type="jar" ext="jar" status="no" details="" size="315320" time="0" location="/Users/acreasy/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.8.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.7" status="release" pubdate="20171104181619" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13273" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="3.7" rev-constraint-default="3.7" rev-constraint-dynamic="3.7" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="499634" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.util" name="jhttpc">
+			<revision name="1.9" status="release" pubdate="20181012012305" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="16418" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.util/jhttpc/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/util/jhttpc/1.9/jhttpc-1.9.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="jhttpc" type="jar" ext="jar" status="no" details="" size="54752" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.util/jhttpc/jars/jhttpc-1.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/util/jhttpc/1.9/jhttpc-1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcpkix-jdk15on">
+			<revision name="1.53" status="release" pubdate="20151013204000" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2927" time="0" location="/Users/acreasy/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/ivy-1.53.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.53/bcpkix-jdk15on-1.53.pom"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.53" rev-constraint-default="1.53" rev-constraint-dynamic="1.53" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="bcpkix-jdk15on" type="jar" ext="jar" status="no" details="" size="671075" time="0" location="/Users/acreasy/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/jars/bcpkix-jdk15on-1.53.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.53/bcpkix-jdk15on-1.53.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcprov-jdk15on">
+			<revision name="1.53" status="release" pubdate="20151013203620" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2676" time="0" location="/Users/acreasy/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.53.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.53/bcprov-jdk15on-1.53.pom"/>
+				<caller organisation="org.bouncycastle" name="bcpkix-jdk15on" conf="compile, runtime" rev="1.53" rev-constraint-default="1.53" rev-constraint-dynamic="1.53" callerrev="1.53"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="1.53" rev-constraint-default="1.53" rev-constraint-dynamic="1.53" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="bcprov-jdk15on" type="jar" ext="jar" status="no" details="" size="3259402" time="0" location="/Users/acreasy/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.53.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.53/bcprov-jdk15on-1.53.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.galley" name="galley-api">
+			<revision name="0.16.6" status="release" pubdate="20181213154829" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21362" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-api/ivy-0.16.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-api/0.16.6/galley-api-0.16.6.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="0.16.6" rev-constraint-default="0.16.6" rev-constraint-dynamic="0.16.6" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="galley-api" type="jar" ext="jar" status="no" details="" size="78506" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.galley/galley-api/jars/galley-api-0.16.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/galley/galley-api/0.16.6/galley-api-0.16.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.cdi.util" name="weft">
+			<revision name="1.0" status="release" pubdate="20160324103626" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12197" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.cdi.util/weft/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/cdi/util/weft/1.0/weft-1.0.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="weft" type="jar" ext="jar" status="no" details="" size="11730" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.cdi.util/weft/jars/weft-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/cdi/util/weft/1.0/weft-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.7" status="release" pubdate="20160329212502" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10288" time="0" location="/Users/acreasy/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.pom"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-identities" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="0.17.1"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.cdi.util" name="weft" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="304075" time="0" location="/Users/acreasy/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.12" status="release" pubdate="20130426173117" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10481" time="0" location="/Users/acreasy/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.12/logback-classic-1.0.12.pom"/>
+				<evicted-by rev="1.1.7"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-identities" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="0.17.1"/>
+				<caller organisation="org.commonjava.cdi.util" name="weft" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="0.17.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.7" status="release" pubdate="20160329212356" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="8012" time="0" location="/Users/acreasy/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.pom"/>
+				<caller organisation="org.commonjava.cdi.util" name="weft" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.1.7"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="470782" time="0" location="/Users/acreasy/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.12" status="release" pubdate="20130426173033" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="8268" time="0" location="/Users/acreasy/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.12/logback-core-1.0.12.pom"/>
+				<evicted-by rev="1.1.7"/>
+				<caller organisation="org.commonjava.cdi.util" name="weft" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.enterprise" name="cdi-api">
+			<revision name="1.2" status="release" pubdate="20140411102419" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cdi-spec.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="5975" time="0" location="/Users/acreasy/.ivy2/cache/javax.enterprise/cdi-api/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.2/cdi-api-1.2.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.16.6"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.3.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="cdi-api" type="jar" ext="jar" status="no" details="" size="71075" time="0" location="/Users/acreasy/.ivy2/cache/javax.enterprise/cdi-api/jars/cdi-api-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.2"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.3.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091014003500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2506" time="0" location="/Users/acreasy/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.2"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="2497" time="0" location="/Users/acreasy/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.interceptor" name="javax.interceptor-api">
+			<revision name="1.2" status="release" pubdate="20130426150152" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://interceptors-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="3857" time="0" location="/Users/acreasy/.ivy2/cache/javax.interceptor/javax.interceptor-api/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.pom"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.2"/>
+				<artifacts>
+					<artifact name="javax.interceptor-api" type="jar" ext="jar" status="no" details="" size="24404" time="0" location="/Users/acreasy/.ivy2/cache/javax.interceptor/javax.interceptor-api/jars/javax.interceptor-api-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.el" name="javax.el-api">
+			<revision name="3.0.0" status="release" pubdate="20130425235245" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://uel-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="3752" time="0" location="/Users/acreasy/.ivy2/cache/javax.el/javax.el-api/ivy-3.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.pom"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="compile, runtime" rev="3.0.0" rev-constraint-default="3.0.0" rev-constraint-dynamic="3.0.0" callerrev="1.2"/>
+				<artifacts>
+					<artifact name="javax.el-api" type="jar" ext="jar" status="no" details="" size="73063" time="0" location="/Users/acreasy/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-interpolation">
+			<revision name="1.19" status="release" pubdate="20130806205710" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7160" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.plexus/plexus-interpolation/ivy-1.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="1.19" rev-constraint-default="1.19" rev-constraint-dynamic="1.19" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="1.19" rev-constraint-default="1.19" rev-constraint-dynamic="1.19" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="plexus-interpolation" type="jar" ext="jar" status="no" details="" size="61697" time="0" location="/Users/acreasy/.ivy2/cache/org.codehaus.plexus/plexus-interpolation/jars/plexus-interpolation-1.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.konghq" name="unirest-objectmapper-jackson">
+			<revision name="3.11.10" status="release" pubdate="20210109184446" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="5679" time="0" location="/Users/acreasy/.ivy2/cache/com.konghq/unirest-objectmapper-jackson/ivy-3.11.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/konghq/unirest-objectmapper-jackson/3.11.10/unirest-objectmapper-jackson-3.11.10.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="3.11.10" rev-constraint-default="3.11.10" rev-constraint-dynamic="3.11.10" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="3.11.10" rev-constraint-default="3.11.10" rev-constraint-dynamic="3.11.10" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="unirest-objectmapper-jackson" type="jar" ext="jar" status="no" details="" size="3452" time="0" location="/Users/acreasy/.ivy2/cache/com.konghq/unirest-objectmapper-jackson/jars/unirest-objectmapper-jackson-3.11.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/konghq/unirest-objectmapper-jackson/3.11.10/unirest-objectmapper-jackson-3.11.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.konghq" name="unirest-java">
+			<revision name="3.11.10" status="release" pubdate="20210109184439" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="7273" time="0" location="/Users/acreasy/.ivy2/cache/com.konghq/unirest-java/ivy-3.11.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/konghq/unirest-java/3.11.10/unirest-java-3.11.10.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="3.11.10" rev-constraint-default="3.11.10" rev-constraint-dynamic="3.11.10" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="3.11.10" rev-constraint-default="3.11.10" rev-constraint-dynamic="3.11.10" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="unirest-java" type="jar" ext="jar" status="no" details="" size="196117" time="0" location="/Users/acreasy/.ivy2/cache/com.konghq/unirest-java/jars/unirest-java-3.11.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/konghq/unirest-java/3.11.10/unirest-java-3.11.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.8.6" status="release" pubdate="20191004195500" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3648" time="0" location="/Users/acreasy/.ivy2/cache/com.google.code.gson/gson/ivy-2.8.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom"/>
+				<caller organisation="com.konghq" name="unirest-java" conf="compile, runtime" rev="2.8.6" rev-constraint-default="2.8.6" rev-constraint-dynamic="2.8.6" callerrev="3.11.10"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="no" details="" size="240255" time="0" location="/Users/acreasy/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.8.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpasyncclient">
+			<revision name="4.1.4" status="release" pubdate="20180720095209" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-asyncclient" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9854" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpasyncclient/ivy-4.1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpasyncclient/4.1.4/httpasyncclient-4.1.4.pom"/>
+				<caller organisation="com.konghq" name="unirest-java" conf="compile, runtime" rev="4.1.4" rev-constraint-default="4.1.4" rev-constraint-dynamic="4.1.4" callerrev="3.11.10"/>
+				<artifacts>
+					<artifact name="httpasyncclient" type="jar" ext="jar" status="no" details="" size="179964" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpasyncclient/jars/httpasyncclient-4.1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpasyncclient/4.1.4/httpasyncclient-4.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore-nio">
+			<revision name="4.4.13" status="release" pubdate="20200109125842" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9837" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpcore-nio/ivy-4.4.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore-nio/4.4.13/httpcore-nio-4.4.13.pom"/>
+				<caller organisation="com.konghq" name="unirest-java" conf="compile, runtime" rev="4.4.13" rev-constraint-default="4.4.13" rev-constraint-dynamic="4.4.13" callerrev="3.11.10"/>
+				<artifacts>
+					<artifact name="httpcore-nio" type="jar" ext="jar" status="no" details="" size="369320" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpcore-nio/jars/httpcore-nio-4.4.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore-nio/4.4.13/httpcore-nio-4.4.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpmime">
+			<revision name="4.5.13" status="release" pubdate="20201003154758" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11002" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.5.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.pom"/>
+				<caller organisation="com.konghq" name="unirest-java" conf="compile, runtime" rev="4.5.13" rev-constraint-default="4.5.13" rev-constraint-dynamic="4.5.13" callerrev="3.11.10"/>
+				<artifacts>
+					<artifact name="httpmime" type="jar" ext="jar" status="no" details="" size="41790" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpmime/jars/httpmime-4.5.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.5.13" status="release" pubdate="20201003154741" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11457" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.pom"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="0.16.6"/>
+				<caller organisation="org.apache.httpcomponents" name="httpmime" conf="compile, runtime" rev="4.5.13" rev-constraint-default="4.5.13" rev-constraint-dynamic="4.5.13" callerrev="4.5.13"/>
+				<caller organisation="com.konghq" name="unirest-java" conf="compile, runtime" rev="4.5.13" rev-constraint-default="4.5.13" rev-constraint-dynamic="4.5.13" callerrev="3.11.10"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="4.5.3" rev-constraint-default="4.5.3" rev-constraint-dynamic="4.5.3" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="780321" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="4.5.13"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="4.5.3" rev-constraint-default="4.5.3" rev-constraint-dynamic="4.5.3" callerrev="1.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="4.5.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="4.5.13"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="4.5.3" rev-constraint-default="4.5.3" rev-constraint-dynamic="4.5.3" callerrev="1.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.4.13" status="release" pubdate="20200109125743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9541" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpcore-nio" conf="compile, runtime" rev="4.4.13" rev-constraint-default="4.4.13" rev-constraint-dynamic="4.4.13" callerrev="4.4.13"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="0.16.6"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.4.13" rev-constraint-default="4.4.13" rev-constraint-dynamic="4.4.13" callerrev="4.5.13"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="4.4.6" rev-constraint-default="4.4.6" rev-constraint-dynamic="4.4.6" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="328593" time="0" location="/Users/acreasy/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="4.4.13"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="4.4.6" rev-constraint-default="4.4.6" rev-constraint-dynamic="4.4.6" callerrev="1.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="4.4.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="4.4.13"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="4.4.6" rev-constraint-default="4.4.6" rev-constraint-dynamic="4.4.6" callerrev="1.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.12.1" status="release" pubdate="20210109013057" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="26274" time="0" location="/Users/acreasy/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.12.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.1/jackson-databind-2.12.1.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="com.konghq" name="unirest-objectmapper-jackson" conf="compile, runtime" rev="2.11.3" rev-constraint-default="2.11.3" rev-constraint-dynamic="2.11.3" callerrev="3.11.10"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="1514483" time="0" location="/Users/acreasy/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.12.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.1/jackson-databind-2.12.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.9.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.1"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="0.16.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.4.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.1"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.1"/>
+				<caller organisation="com.konghq" name="unirest-objectmapper-jackson" conf="compile, runtime" rev="2.11.3" rev-constraint-default="2.11.3" rev-constraint-dynamic="2.11.3" callerrev="3.11.10"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.12.1" status="release" pubdate="20210109011434" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8272" time="0" location="/Users/acreasy/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.12.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.12.1/jackson-annotations-2.12.1.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="2.12.1"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="75700" time="0" location="/Users/acreasy/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.12.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.12.1/jackson-annotations-2.12.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.4.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.1"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.12.1" status="release" pubdate="20210109011316" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="25513" time="0" location="/Users/acreasy/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.12.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.12.1/jackson-core-2.12.1.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="4.4"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="2.12.1"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="365214" time="0" location="/Users/acreasy/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.12.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.12.1/jackson-core-2.12.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.9.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.1"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="0.16.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.4.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.1"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.17.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.atlas" name="atlas-identities">
+			<revision name="0.17.1" status="release" pubdate="20170418200453" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13212" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.atlas/atlas-identities/ivy-0.17.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/atlas/atlas-identities/0.17.1/atlas-identities-0.17.1.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="0.17.1" rev-constraint-default="0.17.1" rev-constraint-dynamic="0.17.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="0.17.1" rev-constraint-default="0.17.1" rev-constraint-dynamic="0.17.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="0.17.1" rev-constraint-default="0.17.1" rev-constraint-dynamic="0.17.1" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="atlas-identities" type="jar" ext="jar" status="no" details="" size="93306" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.atlas/atlas-identities/jars/atlas-identities-0.17.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/atlas/atlas-identities/0.17.1/atlas-identities-0.17.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.17.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="0.17.1"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="0.17.2" rev-constraint-default="0.17.2" rev-constraint-dynamic="0.17.2" callerrev="0.16.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-lang" name="commons-lang">
+			<revision name="2.6" status="release" pubdate="20110116222147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6637" time="0" location="/Users/acreasy/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-identities" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.17.1"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-relationships-api" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.atlas" name="atlas-bindings-jackson-identities" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.17.2"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.16.6"/>
+				<artifacts>
+					<artifact name="commons-lang" type="jar" ext="jar" status="no" details="" size="284220" time="0" location="/Users/acreasy/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.commonjava.maven.ext" name="pom-manipulation-annotation">
+			<revision name="4.4" status="release" pubdate="20210702200010" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="APLv2.0"/>
+				<metadata-artifact status="no" details="" size="20345" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.ext/pom-manipulation-annotation/ivy-4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-annotation/4.4/pom-manipulation-annotation-4.4.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="4.4" rev-constraint-default="4.4" rev-constraint-dynamic="4.4" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="pom-manipulation-annotation" type="jar" ext="jar" status="no" details="" size="3907" time="0" location="/Users/acreasy/.ivy2/cache/org.commonjava.maven.ext/pom-manipulation-annotation/jars/pom-manipulation-annotation-4.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-annotation/4.4/pom-manipulation-annotation-4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.olivergondza" name="maven-jdk-tools-wrapper">
+			<revision name="0.1" status="release" pubdate="20160208065218" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/olivergondza/maven-jdk-tools-wrapper" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2742" time="0" location="/Users/acreasy/.ivy2/cache/com.github.olivergondza/maven-jdk-tools-wrapper/ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/olivergondza/maven-jdk-tools-wrapper/0.1/maven-jdk-tools-wrapper-0.1.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-annotation" conf="compile, runtime" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="maven-jdk-tools-wrapper" type="jar" ext="jar" status="no" details="" size="2596" time="0" location="/Users/acreasy/.ivy2/cache/com.github.olivergondza/maven-jdk-tools-wrapper/jars/maven-jdk-tools-wrapper-0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/olivergondza/maven-jdk-tools-wrapper/0.1/maven-jdk-tools-wrapper-0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.squareup" name="javapoet">
+			<revision name="1.13.0" status="release" pubdate="20200618164424" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/square/javapoet/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4098" time="0" location="/Users/acreasy/.ivy2/cache/com.squareup/javapoet/ivy-1.13.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/squareup/javapoet/1.13.0/javapoet-1.13.0.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-annotation" conf="compile, runtime" rev="1.13.0" rev-constraint-default="1.13.0" rev-constraint-dynamic="1.13.0" callerrev="4.4"/>
+				<artifacts>
+					<artifact name="javapoet" type="jar" ext="jar" status="no" details="" size="106068" time="0" location="/Users/acreasy/.ivy2/cache/com.squareup/javapoet/jars/javapoet-1.13.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/squareup/javapoet/1.13.0/javapoet-1.13.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.10.0" status="release" pubdate="20210610134340" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="20752" time="0" location="/Users/acreasy/.ivy2/cache/commons-io/commons-io/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.10.0/commons-io-2.10.0.pom"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-core" conf="default, compile, runtime, master" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-annotation" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-io" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.ext" name="pom-manipulation-common" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="4.4"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="325983" time="0" location="/Users/acreasy/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.10.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.10.0/commons-io-2.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.0"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-filearc" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-api" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-core" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-transport-httpclient" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.maven.galley" name="galley-maven" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.16.6"/>
+				<caller organisation="org.commonjava.util" name="jhttpc" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.softwaremill.sttp.client3" name="core_2.12">
+			<revision name="3.3.5" status="release" pubdate="20210525160019" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://softwaremill.com/open-source" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3784" time="0" location="/Users/acreasy/.ivy2/cache/com.softwaremill.sttp.client3/core_2.12/ivy-3.3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/softwaremill/sttp/client3/core_2.12/3.3.5/core_2.12-3.3.5.pom"/>
+				<caller organisation="org.jboss.pnc.smeg" name="smeg-plugin" conf="compile" rev="3.3.5" rev-constraint-default="3.3.5" rev-constraint-dynamic="3.3.5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="core_2.12" type="jar" ext="jar" status="no" details="" size="481173" time="0" location="/Users/acreasy/.ivy2/cache/com.softwaremill.sttp.client3/core_2.12/jars/core_2.12-3.3.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/softwaremill/sttp/client3/core_2.12/3.3.5/core_2.12-3.3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.softwaremill.sttp.shared" name="ws_2.12">
+			<revision name="1.2.5" status="release" pubdate="20210518072606" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://softwaremill.com/open-source" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3080" time="0" location="/Users/acreasy/.ivy2/cache/com.softwaremill.sttp.shared/ws_2.12/ivy-1.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/softwaremill/sttp/shared/ws_2.12/1.2.5/ws_2.12-1.2.5.pom"/>
+				<caller organisation="com.softwaremill.sttp.client3" name="core_2.12" conf="default, compile, runtime, master" rev="1.2.5" rev-constraint-default="1.2.5" rev-constraint-dynamic="1.2.5" callerrev="3.3.5"/>
+				<artifacts>
+					<artifact name="ws_2.12" type="jar" ext="jar" status="no" details="" size="47017" time="0" location="/Users/acreasy/.ivy2/cache/com.softwaremill.sttp.shared/ws_2.12/jars/ws_2.12-1.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/softwaremill/sttp/shared/ws_2.12/1.2.5/ws_2.12-1.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.softwaremill.sttp.shared" name="core_2.12">
+			<revision name="1.2.5" status="release" pubdate="20210518072613" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://softwaremill.com/open-source" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2775" time="0" location="/Users/acreasy/.ivy2/cache/com.softwaremill.sttp.shared/core_2.12/ivy-1.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/softwaremill/sttp/shared/core_2.12/1.2.5/core_2.12-1.2.5.pom"/>
+				<caller organisation="com.softwaremill.sttp.shared" name="ws_2.12" conf="compile, runtime" rev="1.2.5" rev-constraint-default="1.2.5" rev-constraint-dynamic="1.2.5" callerrev="1.2.5"/>
+				<caller organisation="com.softwaremill.sttp.client3" name="core_2.12" conf="default, compile, runtime, master" rev="1.2.5" rev-constraint-default="1.2.5" rev-constraint-dynamic="1.2.5" callerrev="3.3.5"/>
+				<artifacts>
+					<artifact name="core_2.12" type="jar" ext="jar" status="no" details="" size="30972" time="0" location="/Users/acreasy/.ivy2/cache/com.softwaremill.sttp.shared/core_2.12/jars/core_2.12-1.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/softwaremill/sttp/shared/core_2.12/1.2.5/core_2.12-1.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.softwaremill.sttp.model" name="core_2.12">
+			<revision name="1.4.7" status="release" pubdate="20210514162205" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://softwaremill.com/open-source" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2774" time="0" location="/Users/acreasy/.ivy2/cache/com.softwaremill.sttp.model/core_2.12/ivy-1.4.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/softwaremill/sttp/model/core_2.12/1.4.7/core_2.12-1.4.7.pom"/>
+				<caller organisation="com.softwaremill.sttp.shared" name="ws_2.12" conf="compile, runtime" rev="1.4.7" rev-constraint-default="1.4.7" rev-constraint-dynamic="1.4.7" callerrev="1.2.5"/>
+				<caller organisation="com.softwaremill.sttp.client3" name="core_2.12" conf="default, compile, runtime, master" rev="1.4.7" rev-constraint-default="1.4.7" rev-constraint-dynamic="1.4.7" callerrev="3.3.5"/>
+				<artifacts>
+					<artifact name="core_2.12" type="jar" ext="jar" status="no" details="" size="382619" time="0" location="/Users/acreasy/.ivy2/cache/com.softwaremill.sttp.model/core_2.12/jars/core_2.12-1.4.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/softwaremill/sttp/model/core_2.12/1.4.7/core_2.12-1.4.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/acreasy/Work/scm/smeg-simple-test/target/scala-2.12/sbt-empty_2.12-1.0.0-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/Hello.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/acreasy/Work/scm/smeg-simple-test/src/main/scala/example/Hello.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
